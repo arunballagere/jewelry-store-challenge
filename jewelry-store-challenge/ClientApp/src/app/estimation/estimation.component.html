@@ -1,0 +1,34 @@
+<div style="text-align: right;"> 
+{{UserTitle}}
+</div>
+
+<table class="table table-bordered">
+    <tbody>
+      <tr>
+        <td>Gold Price (per gram)</td>     
+        <td><input id="goldprice" [(ngModel)]="goldprice"></td>
+      </tr>
+      <tr>
+        <td>Weight (grams)</td>      
+        <td><input id="weight" [(ngModel)]="weight"></td>
+      </tr>
+      <tr>
+        <td>Total Price</td>      
+        <td><input id="totalPrice" [(ngModel)]="totalPrice"></td>
+      </tr>
+      <tr *ngIf="isPrevilaged">
+        <td></td>      
+        <td>Discount % <input id="discount" disabled="disabled" [ngModel]="discount | percent"></td>
+      </tr>
+      <tr>
+        <td><button type="button" (click)="Calculate()">Calculate</button> </td>
+        <td><button type="button" (click)="PrintToScreen()">Print to Screen</button></td>
+        <td><button type="button" (click)="PrintToFile()">Print to File</button></td>
+        <td><button ype="button" (click)="PrintToPaper()">Print to Paper</button></td>
+    </tr>
+        <tr>
+            <td colspan="4" style="text-align:right;"><button type="button" (click)="Close()">Close</button> </td> 
+        </tr>
+      
+    </tbody>
+  </table>

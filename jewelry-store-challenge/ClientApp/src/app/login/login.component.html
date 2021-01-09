@@ -1,0 +1,32 @@
+
+    
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col">
+        <label for="exampleInputEmail1" class="form-label"> User Name</label>
+      </div>
+      <div class="col">
+        <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="username">
+      </div>
+    
+    </div>
+    <div class="row align-items-center">
+      <div class="col">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+      </div>
+      <div class="col">
+        <input type="password" class="form-control" id="exampleInputPassword1"  [(ngModel)]="password">
+      </div>
+    
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col">
+        <button type="button" class="btn btn-primary" (click)="login()">Login</button>
+      </div>
+      <div class="col">
+        <button type="button" class="btn btn-secondary">Cancel</button>
+      </div>
+      
+    </div>
+  </div>
